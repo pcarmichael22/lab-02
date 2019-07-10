@@ -2,70 +2,70 @@
 
 //question1
 function questionOne() {
-    var answerState = prompt('Do you like rasberry flavored anything?');
+    var answerState = prompt('Do I like rasberries?');
 
     if (answerState.toLowerCase() === 'yes' || answerState.toLowerCase() === 'y') {
-        alert('Thats awesome! Me too! Did you know that rasberry flavoring includes a natural ingredient called castoreum? Castoreum happens to come from beaver secretions? GROSS');
+        alert('You got it! They are one of my favorite fruits!');
     } else {
-        alert('You are lucky! try the question again and type yes to find out why!');
+        alert('Sorry, wrong answer');
     }
 
-    console.log('Does the user like rasberry flavoring:' + answerState);
+    console.log('Does Peter like rasberries?:' + answerState);
 
 }
 
 //question2
 function questionTwo() {
-    var answerCar = prompt('Are you scared of spiders?');
+    var answerCar = prompt('Am I scared of spiders?');
 
     if (answerCar.toLowerCase() === 'yes' || answerCar.toLowerCase() === 'y') {
-        alert('Dont worry! Spiders are our friends!');
+        alert('Wrong! spiders don\'t scare me at all!');
     } else {
-        alert('Good for you for being so courageous!')
+        alert('Correct!')
     }
     
-    console.log('Is the user scared of spiders? ' + answerCar);
+    console.log('Is Peter scared of spiders? ' + answerCar);
 
 }
 
 //question3
 function questionThree() {
-    var middleName = prompt('Have you seen Infinity War?');
+    var middleName = prompt('Have I seen Avengers Endgame?');
 
     if (middleName.toLowerCase() === 'yes' || middleName.toLowerCase() === 'y') {
-        alert("Excellent!");
+        alert('Absolutely! It wasn\'t as good as Infinity War though.' );
     } else {
-        alert('Thanos wins at the end');
+        alert('Of course I\'ve seen it come on I\'m a huge geek');
     }
 
-    console.log('Has the user seen Infinity War? ' + middleName);
+    console.log('Has Peter seen Infinity War? ' + middleName);
 
 }
 
 //question4
 function questionFour() {
-    var favMov = prompt('Have you ever traveled outside of the USA?');
+    var favMov = prompt('Have I ever traveled outside of the USA?');
 
     if (favMov.toLowerCase() === 'Yes' || favMov.toLowerCase() === 'y') {
-        alert('How cool! I love travelling to other places!');
+        alert('Correct! I have been to Canada, Mexico, Nicaragua, Finland, Vietnam, and Cambodia!');
     } else {
-        alert('Hopefully someday you will! its great to see other cultures!');
+        alert('Wrong! I love traveling!');
     }
 
-    console.log('Has the user traveled abroad? ' + favMov);
+    console.log('Has Peter user traveled abroad? ' + favMov);
 
 }
 
 //question5
 function questionFive() {
-    var worFear = prompt('Do you like turtles?');
+    var worFear = prompt('Do I like turtles?');
 
     if (worFear.toLowerCase() === 'yes' || worFear.toLowerCase() === 'y') {
-        alert("I like turtles too");
+        alert("Duhhhhh....");
     } else {
-        alert('That\'s messed up dude');
+        alert('That\'s messed up dude, of course I like turtles');
     }
 
-    console.log('Does the user like turtles? ' + worFear);
+    console.log('Does the Peter like turtles? ' + worFear);
 
 }
