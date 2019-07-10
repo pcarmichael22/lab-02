@@ -35,7 +35,7 @@ function questionThree() {
     if (middleName.toLowerCase() === 'yes' || middleName.toLowerCase() === 'y') {
         alert('Absolutely! It wasn\'t as good as Infinity War though.' );
     } else {
-        alert('Of course I\'ve seen it come on I\'m a huge geek');
+        alert('Of course I\'ve seen it! Come on I\'m a huge geek');
     }
 
     console.log('Has Peter seen Infinity War? ' + middleName);
@@ -46,7 +46,7 @@ function questionThree() {
 function questionFour() {
     var favMov = prompt('Have I ever traveled outside of the USA?');
 
-    if (favMov.toLowerCase() === 'Yes' || favMov.toLowerCase() === 'y') {
+    if (favMov.toLowerCase() === 'yes' || favMov.toLowerCase() === 'y') {
         alert('Correct! I have been to Canada, Mexico, Nicaragua, Finland, Vietnam, and Cambodia!');
     } else {
         alert('Wrong! I love traveling!');
