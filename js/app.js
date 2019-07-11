@@ -105,7 +105,7 @@ while (i < 4 && x === true) {
 
             console.log('Im in the for loop');
 
-            if (favPok[i] === guessUser) {
+            if (favPok[i].toLowerCase() === guessUser) {
 
                 alert('Congrats!');
 
