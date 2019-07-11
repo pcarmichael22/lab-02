@@ -1,12 +1,15 @@
 'use strict'
 
+//FUNCTION CALL FOR BUTTON
+function questionOne(){
+
 //VARIABLE STORAGE
 
 var i = 0;
 var x = true;
 var yay = 0;
 var escape = false;
-var favPok = ['gengar', 'chansey', 'scyther', 'zapados', 'squirtle'];
+var favPok = ['gengar ', 'chansey ', 'scyther', 'zapados', 'squirtle'];
 
 
 //QUESTION 1
@@ -113,11 +116,16 @@ while (i < 4 && x === true) {
                 break;
             }
 
-        } if (escape === false) {
+        } if (escape === false && yay === 5) {
+            alert('You tried so hard! Unfortunately you aren\'t a Pokemon master yet! My favorite Pokemon are ' + favPok + ' . Thanks for playing!')
+            break;
+        }
+    
+        if (escape === false) {
             alert('Good try! You have used ' + (yay + 1) + ' of your 6 tries!')
         }
 
         yay++;
     }
 
-
+}
