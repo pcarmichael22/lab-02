@@ -51,6 +51,7 @@ var total = 0;
         if (Number(favNum) === 7) {
             alert('Correct! Thats my favorite number!');
             escape = true;
+            total++;
             //break;
         }
         else if (favNum > 7) {
@@ -86,6 +87,7 @@ var total = 0;
                 alert('Congrats!');
 
                 escape = true;
+                total++;
 
                 console.log('Made it to the if');
 
@@ -104,6 +106,7 @@ var total = 0;
         yay++;
     }
 
+    alert('Good Job you got ' + total + ' of 7 correct!')
 }
 // //QUESTION 1
 
