@@ -63,7 +63,7 @@ var total = 0;
             yay++;
         }
         else {
-            alert('That was not a valid response. Please lime your number to answers You have used ' + yay + ' of your 4 tries!');
+            alert('That was not a valid response. Please limit your number to answers You have used ' + yay + ' of your 4 tries!');
         }
         console.log('my fav num is' + favNum + ' escape is ' + escape);
     }
