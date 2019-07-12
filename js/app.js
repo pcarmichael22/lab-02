@@ -5,42 +5,104 @@
 
 //VARIABLE STORAGE
 
-var i = 0;
-var x = true;
 var yay = 0;
 var escape = false;
-var favPok = ['gengar ', 'chansey ', 'scyther', 'zapados', 'squirtle'];
+var favPok = ['gengar', 'chansey ', 'scyther', 'zapados', 'squirtle'];
 
 var qAsk = ['Do I like rasberries?','Am I scared of spiders?','Have I seen Avengers: Endgame','Have I travelled outside the USA','Do I like turtles?'];
 var correctAnswer = ['yes', 'no','no','yes','yes','no','yes','no','yes','no'];
 var response = ['You got it! They are one of my favorite fruits!','Sorry, wrong answer','Correct!','Wrong! spiders don\'t scare me at all!','Absolutely! It wasn\'t as good as Infinity War though.','Of course I\'ve seen it! Come on I\'m a huge geek','Correct! I have been to Canada, Mexico, Nicaragua, Finland, Vietnam, and Cambodia!','Wrong! I love traveling!','Duhhhhh....','That\'s messed up dude, of course I like turtles'];
 
+//If there's an unnacceptable answer, ask question again
 var qBoo = false;
 
+//number of correct answers
 var total = 0;
 
-for(var i=0; i < qAsk.length; i++) {
-    var forAns = prompt(qAsk[i]).toLowerCase();
-    console.log(i, forAns,);
-    if(qBoo === false) {
-        if(forAns === correctAnswer[i*2]) {
-            alert(response[i*2]);
-            qBoo = true;
-            total++;
-            console.log(forAns, correctAnswer, response, i, total);
-        } else if(forAns === correctAnswer[(i*2)+1]) {
-            alert(response[(i*2)+1]);
-            qBoo = true;
-            console.log(response, correctAnswer, i, forAns);
-        } else {
-            alert('It seems that you did not put in an acceptable answer. Please only type yes or no');
-            qBoo = true;
-            i--;
-            console.log(response, i);
+    //loop running questions 1-5
+    for(var i=0; i < qAsk.length; i++) {
+        var forAns = prompt(qAsk[i]).toLowerCase();
+        console.log(i, forAns,);
+        if(qBoo === false) {
+            if(forAns === correctAnswer[i*2]) {
+                alert(response[i*2]);
+                qBoo = true;
+                total++;
+                console.log(forAns, correctAnswer, response, i, total);
+            } else if(forAns === correctAnswer[(i*2)+1]) {
+                alert(response[(i*2)+1]);
+                qBoo = true;
+                console.log(response, correctAnswer, i, forAns);
+            } else {
+                alert('It seems that you did not put in an acceptable answer. Please only type yes or no');
+                qBoo = true;
+                i--;
+                console.log(response, i);
+            }
         }
+        qBoo = false;
     }
-    qBoo = false;
-}
+
+    //QUESTION 6
+    while (yay < 4 && escape === false) {
+
+        var favNum = prompt('What is my favorite number?');
+
+        if (Number(favNum) === 7) {
+            alert('Correct! Thats my favorite number!');
+            escape = true;
+            //break;
+        }
+        else if (favNum > 7) {
+            alert('Good try! The number is lower than that! You have used ' + (yay + 1) + ' of your 4 tries!');
+            yay++;
+        }
+        else if (favNum < 7) {
+            alert('Good try! The number is higher than that! You have used ' + (yay + 1) + ' of your 4 tries!');
+            yay++;
+        }
+        else {
+            alert('That was not a valid response. Please lime your number to answers You have used ' + yay + ' of your 4 tries!');
+        }
+        console.log('my fav num is' + favNum + ' escape is ' + escape);
+    }
+
+    yay = 0;
+    escape = false;
+
+    //QUESTION 7 - HELL QUESTION
+    while (yay < 6 && escape === false) {
+
+        console.log('Im in the while loop');
+
+        var guessUser = prompt('Can you guess one of my favorite Pokemon?');
+
+        for (var i = 0; i < favPok.length; i++) {
+
+            console.log('Im in the for loop');
+
+            if (favPok[i].toLowerCase() === guessUser) {
+
+                alert('Congrats!');
+
+                escape = true;
+
+                console.log('Made it to the if');
+
+                break;
+            }
+
+        } if (escape === false && yay === 5) {
+            alert('You tried so hard! Unfortunately you aren\'t a Pokemon master yet! My favorite Pokemon are ' + favPok + ' . Thanks for playing!')
+            break;
+        }
+    
+        if (escape === false) {
+            alert('Good try! You have used ' + (yay + 1) + ' of your 6 tries!')
+        }
+
+        yay++;
+    }
 
 
 // //QUESTION 1
