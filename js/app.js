@@ -1,7 +1,7 @@
 'use strict'
 
 //FUNCTION CALL FOR BUTTON
-// function questionOne(){
+function questionOne(){
 
 //VARIABLE STORAGE
 
@@ -104,7 +104,7 @@ var total = 0;
         yay++;
     }
 
-
+}
 // //QUESTION 1
 
 // var answerState = prompt('Do I like rasberries?');
